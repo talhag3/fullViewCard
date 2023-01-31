@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    color: #E51953;
+    background-color: rgb(36 36 37);
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #161617;
+    border-bottom: 2px solid #E51953;
+  }
+
+  .logo{
+    text-decoration: none;
+    overflow-wrap: break-word;
+    pointer-events: auto;
+    letter-spacing: 0em;
+    line-height: 1em;
+    color: #E51953;
+    margin: 0;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 28px;
+  }
+
+  .cards{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height:100%;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card{
+    padding: 10px;
+    flex-grow: 1;
+    position: absolute;
+    
+    display: flex;
+    height: 100%;
+    
+    
+    width: 530px;
+    /* box-shadow: 0 2px 4px 0 rgb(0 0 0 / 40%); */
+    flex-direction: column;
+  }
+  .card .image-wraper{
+    flex-grow: 1;
+    position: relative;
+  }
+  .card .main-image{
+    border-top-left-radius: 8px ;
+    border-top-right-radius: 8px ;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+  }
+  .card .info{
+    background-color: #161617;
+    padding: 10px 5px;
+    border-bottom-left-radius: 8px ;
+    border-bottom-right-radius: 8px ;
+  }
+  .card .av-wraper{
+    padding: 5px 5px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .card .avatar{
+    border: 2px solid #E51953;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 40%);
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  .av-wraper .name{
+    color: #E51953;
+    font-size: 16px;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: left;
+  }
+  .cbody{
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column; 
+  }
+  /* .cbody .socials{
+    width: 100%;
+    color: #E51953;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 70px;
+    align-items: center;
+  } */
+  .socials {
+    display: flex;
+    flex-flow: row;
+    
+  }
+  
+  .cbody .socials .btn-links{
+    width: 100%;
+    padding: 5px;
+    color: #E51953;
+    font-size: 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgb(36 36 37);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+    margin: 5px;
+  }
+
+  .cbody .socials .btn-links svg{
+    fill: #E51953;
+    width: 20px;
+    height: 20px;
+  }
+
+  .coverimage{
+    z-index: 2;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .tip-btn{
+    border-radius: 5px;
+    padding: 5px;
+    width: 80%;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #E51953;
+    font-size: 20px;
+    font-weight: 800;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 40%);
+    
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .card {
+      width: 95vw;
+      
+    }
+    
+  }
+
+  
+
+  
